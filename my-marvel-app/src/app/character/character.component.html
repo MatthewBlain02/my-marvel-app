@@ -1,0 +1,23 @@
+<div class="container d-flex">
+    <input class="form-control me-2" type="text" [(ngModel)]="name">
+    <button class="btn btn-success" (click)="search(name)">Search</button>
+</div>
+
+<!--<h1>{{ character.name }}</h1>
+<img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" alt="{{ character.name }}">
+<p>{{ character.description }}</p>-->
+<div class="container text-black">
+    <div class="card m-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="img-fluid rounded-start" [src]="character.thumbnail.path + '.' + character.thumbnail.extension" alt="{{ character.name }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ character.name }}</h5>
+              <p class="card-text"><small class="text-body-secondary">{{ character.description }}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
